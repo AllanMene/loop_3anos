@@ -9,8 +9,16 @@ function verificarTime() {
 
     
     if (respostaTime.toLowerCase() === "palmeiras") {
-      alert("Isso mesmo! O Athlético PR é o melhor time!");
-      continuarPerguntando = true; // Sai do loop após a resposta correta
+      alert("Isso mesmo!");
+      continuarPerguntando = false; // Sai do loop após a resposta correta
+    } else {
+      alert("Não é isso! Tente novamente.");
+    }
+    var respostaTime = prompt("Vai?");
+
+    if (respostaTime.toLowerCase() === "curintia") {
+      alert("Kapakapa");
+      continuarPerguntando = false; // Sai do loop após a resposta correta
     } else {
       alert("Não é isso! Tente novamente.");
     }
